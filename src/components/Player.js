@@ -2,7 +2,6 @@ import React from "react";
 
 function Player(props) {
   const {
-    name,
     lifeTotal,
     handleIncrement,
     handleDecrement,
@@ -16,7 +15,13 @@ function Player(props) {
   return (
     <div className="flex justify-center pt-2 mt-12 w-full md:w-1/2 p-2">
       <div className={cardClassName}>
-        <h2 className="text-white	 text-xl font-bold mb-4">{name}</h2>
+        <form className="flex justify-center items-center ">
+          <input
+            type="text"
+            className="text-white placeholder-white bg-cyan-600 text-center  text-xl font-bold mb-4"
+            placeholder="Enter player name"
+          ></input>
+        </form>
         <p className="text-white	 text-6xl font-bold mb-8">
           {lifeTotal}
         </p>

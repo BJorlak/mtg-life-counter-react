@@ -34,7 +34,6 @@ function Board() {
         <div className="flex flex-wrap">
           <Player
             id={1}
-            name="Player 1"
             lifeTotal={player1LifeTotal}
             handleIncrement={handlePlayer1Increment}
             handleDecrement={handlePlayer1Decrement}
@@ -42,7 +41,6 @@ function Board() {
           />
           <Player
             id={2}
-            name="Player 2"
             lifeTotal={player2LifeTotal}
             handleIncrement={handlePlayer2Increment}
             handleDecrement={handlePlayer2Decrement}
