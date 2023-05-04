@@ -25,13 +25,19 @@ function Board() {
     }
   };
 
+  let gameStatus = "Magic: The Gathering Life Counter";
+
+  if (player2LifeTotal == 0 || player1LifeTotal == 0) {
+    gameStatus = (
+      <h1 className="text-red-700 mt-2 text-7xl font-bold text-center mb-4">
+        GAME OVER
+      </h1>
+    );
+  }
   return (
     <div className="bg-gray-100 min-h-screen items-center">
       <div className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold text-center mb-4">
-          Magic: The Gathering Life Counter
-        </h1>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center">
           <Player
             id={1}
             lifeTotal={player1LifeTotal}
@@ -39,6 +45,9 @@ function Board() {
             handleDecrement={handlePlayer1Decrement}
             isFlipped={true}
           />
+          <h1 className="text-green-500 mt-2 text-3xl font-bold text-center mb-4">
+            {gameStatus}
+          </h1>
           <Player
             id={2}
             lifeTotal={player2LifeTotal}

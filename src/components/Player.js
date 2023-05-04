@@ -13,7 +13,7 @@ function Player(props) {
   } bg-${background}-500`;
 
   return (
-    <div className="flex justify-center pt-2 mt-12 w-full md:w-1/2 p-2">
+    <div className="flex justify-center  w-full md:w-1/2 p-2">
       <div className={cardClassName}>
         <form className="flex justify-center items-center ">
           <input
