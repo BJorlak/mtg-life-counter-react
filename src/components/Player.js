@@ -20,7 +20,7 @@ function Player(props) {
   } bg-${background}-500`;
 
   return (
-    <div className="flex justify-center  w-full md:w-1/2 p-4">
+    <div className="flex justify-center  w-full md:w-1/2 p-2">
       <div className={cardClassName} style={{ backgroundColor }}>
         <form
           style={{ backgroundColor }}
@@ -29,7 +29,7 @@ function Player(props) {
           <input
             style={{ backgroundColor }}
             type="text"
-            className="w-52 text-white placeholder-white bg-cyan-600 text-center  text-xl font-bold mb-4"
+            className="w-52 text-white placeholder-white bg-cyan-600 text-center  text-xl font-bold mb-2"
             placeholder="Enter player name"
           ></input>
         </form>

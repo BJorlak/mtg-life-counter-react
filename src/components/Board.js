@@ -45,7 +45,7 @@ function Board() {
             handleDecrement={handlePlayer1Decrement}
             isFlipped={true}
           />
-          <h1 className="text-green-500 mt-2 text-3xl font-bold text-center mb-4">
+          <h1 className="text-green-500 mt-2 text-3xl font-bold text-center mb-2">
             {gameStatus}
           </h1>
           <Player
