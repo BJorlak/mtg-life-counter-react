@@ -18,7 +18,7 @@ function Player(props) {
         <form className="m-12 flex justify-center items-center ">
           <input
             type="text"
-            className="text-white placeholder-white bg-cyan-600 text-center  text-xl font-bold mb-4"
+            className="w-52 text-white placeholder-white bg-cyan-600 text-center  text-xl font-bold mb-4"
             placeholder="Enter player name"
           ></input>
         </form>
