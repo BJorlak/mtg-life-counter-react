@@ -2,7 +2,6 @@ import React from "react";
 
 function Player(props) {
   const {
-    id,
     name,
     lifeTotal,
     handleIncrement,
