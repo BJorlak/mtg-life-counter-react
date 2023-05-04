@@ -27,7 +27,7 @@ function Board() {
 
   let gameStatus = "Magic: The Gathering Life Counter";
 
-  if (player2LifeTotal == 0 || player1LifeTotal == 0) {
+  if (player2LifeTotal === 0 || player1LifeTotal === 0) {
     gameStatus = (
       <h1 className="text-red-700 mt-2 text-7xl font-bold text-center mb-4">
         GAME OVER
