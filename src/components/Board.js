@@ -10,7 +10,7 @@ function Board() {
   };
 
   const handlePlayer1Decrement = () => {
-    if (player1LifeTotal > 1) {
+    if (player1LifeTotal > 0) {
       setPlayer1LifeTotal(player1LifeTotal - 1);
     }
   };
@@ -20,7 +20,7 @@ function Board() {
   };
 
   const handlePlayer2Decrement = () => {
-    if (player2LifeTotal > 1) {
+    if (player2LifeTotal > 0) {
       setPlayer2LifeTotal(player2LifeTotal - 1);
     }
   };
