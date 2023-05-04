@@ -15,7 +15,7 @@ function Player(props) {
   return (
     <div className="flex justify-center  w-full md:w-1/2 p-2">
       <div className={cardClassName}>
-        <form className="flex justify-center items-center ">
+        <form className="m-12 flex justify-center items-center ">
           <input
             type="text"
             className="text-white placeholder-white bg-cyan-600 text-center  text-xl font-bold mb-4"
